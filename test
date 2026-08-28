@@ -113,8 +113,10 @@ https://cdn-2.pishow.tv/live/1461/master.m3u8
 https://cdn-2.pishow.tv/live/1459/master.m3u8
 #EXTINF:-1 tvg-logo="https://assets-prod.services.toffeelive.com/Pc3RD5YBtpl-Sbt7doxr/posters/d0f337ab-a7e6-4eed-bc7b-7d51fdc70a0f.png" group-title="HINDI MOVIE",Zee Action
 http://rgkkw.live:80/live/1Aoen7elp5/IgMJ60tmAa/967.ts
-#EXTINF:-1 tvg-logo="https://otapp.store/uploads/tv_image/sm/sangeet-bangla.png" group-title="BANGLA MUSIC",SANGEET BANGLA
+#EXTINF:-1 tvg-logo="https://otapp.store/uploads/tv_image/sm/sangeet-bangla.png" group-title="Kolkata BANGLA MUSIC",SANGEET BANGLA
 https://cdn-4.pishow.tv/live/1143/master.m3u8
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/jSLNzXgM/Bengali-Beats.png" group-title=""Kolkata BANGLA MUSIC",Bengali Beats
+https://live20.bozztv.com/giatvplayout7/giatv-209587/tracks-v1a1/mono.ts.m3u8
 #EXTINF:-1 tvg-logo="https://otapp.store/uploads/tv_image/sm/zoom.png",Zoom
 https://d2esfk1pb9cdob.cloudfront.net/master.m3u8
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWZvoj7sQem7dOoLMmPtCzKgSxaHVEJi6L6uBRFeJ33gfyFug_Yh96Z1U&s=10" group-title="Music",Big Magic
