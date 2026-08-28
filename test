@@ -57,7 +57,7 @@ https://srknowapp.ncare.live/srktvhlswodrm/srktv.stream/playlist.m3u8
 http://202.70.146.135:8000/play/a01q/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/jSBDsbBX/20240823_021324.png" group-title="Kids",Sony YaY
 https://stream.ottplus.live/live/sony_yay_abr/live/sony_yay_720/chunks.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/79g2kMA.png" ,Sonic Hindi
+#EXTINF:-1 group-title="Kids",Sonic Hindi
 http://202.70.146.135:8000/play/a02t/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/k4mDbyJR/20240823_021424.png" group-title="Kids",Cartoon Network
 http://host.phorious.art/validation/405?deviceMac=10:27:BE:25:67:80&split=33da9c80155413830543e27c8520ba99&smart=1
