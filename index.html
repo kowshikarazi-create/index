@@ -1,131 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+export default {
+  async fetch(request) {
+    const clientIP = request.headers.get("CF-Connecting-IP") || "";
 
-  <title>My Website</title>
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
+    // Allow: 103.132.89.0/24
+    if (clientIP.startsWith("103.132.89.")) {
+      return Response.redirect(
+        "https://list.kowshik-a-razi.workers.dev/",
+        302
+      );
     }
 
-    body {
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background:
-        radial-gradient(circle at top left, #243b55, transparent 40%),
-        radial-gradient(circle at bottom right, #141e30, transparent 40%),
-        #0b0f19;
-      color: white;
-    }
-
-    .card {
-      width: 90%;
-      max-width: 600px;
-      padding: 50px 35px;
-      text-align: center;
-
-      background: rgba(255, 255, 255, 0.08);
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      border-radius: 25px;
-
-      backdrop-filter: blur(15px);
-      -webkit-backdrop-filter: blur(15px);
-
-      box-shadow: 0 20px 60px rgba(0,0,0,0.4);
-    }
-
-    .logo {
-      width: 80px;
-      height: 80px;
-      margin: auto;
-      margin-bottom: 25px;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      border-radius: 50%;
-      background: linear-gradient(135deg, #667eea, #764ba2);
-
-      font-size: 35px;
-      font-weight: bold;
-    }
-
-    h1 {
-      font-size: 38px;
-      margin-bottom: 15px;
-    }
-
-    p {
-      color: #b8c0d0;
-      font-size: 17px;
-      line-height: 1.6;
-      margin-bottom: 30px;
-    }
-
-    .button {
-      display: inline-block;
-      padding: 14px 28px;
-      margin: 6px;
-
-      color: white;
-      text-decoration: none;
-
-      border-radius: 12px;
-      background: linear-gradient(135deg, #667eea, #764ba2);
-
-      transition: 0.25s;
-    }
-
-    .button:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 10px 25px rgba(102,126,234,0.35);
-    }
-
-    footer {
-      margin-top: 35px;
-      font-size: 13px;
-      color: #737b8c;
-    }
-  </style>
-</head>
-
-<body>
-
-  <div class="card">
-
-    <div class="logo">
-      R
-    </div>
-
-    <h1>Welcome</h1>
-
-    <p>
-      This is my personal GitHub Pages website.
-      Simple, clean and responsive.
-    </p>
-
-    <a href="#" class="button">
-      Get Started
-    </a>
-
-    <a href="#" class="button">
-      Learn More
-    </a>
-
-    <footer>
-      © 2026 My Website
-    </footer>
-
-  </div>
-
-</body>
-</html>
+    // All other IPs
+    return Response.redirect(
+      "https://rapid-mode-ae8c.kowshik-a-razi.workers.dev/",
+      302
+    );
+  }
+};
